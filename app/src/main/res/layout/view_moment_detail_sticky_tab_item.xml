@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <cn.talianshe.android.widget.UnderlineBtn
+            android:id="@+id/btn_share_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:boldColor="@color/black"
+            app:checkedColor="@color/theme_color"
+            app:drawableLeft="@mipmap/share"
+            app:lineHeight="1.5dp"
+            app:textSize="12sp"
+            app:unCheckedColor="@color/gray" />
+
+        <cn.talianshe.android.widget.UnderlineBtn
+            android:id="@+id/btn_comment_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:boldColor="@color/black"
+            app:checkedColor="@color/theme_color"
+            app:drawableLeft="@mipmap/comment"
+            app:lineHeight="1.5dp"
+            app:textSize="12sp"
+            app:unCheckedColor="@color/black" />
+
+        <cn.talianshe.android.widget.UnderlineBtn
+            android:id="@+id/btn_up_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:boldColor="@color/black"
+            app:checkedColor="@color/theme_color"
+            app:drawableLeft="@mipmap/no_up"
+            app:lineHeight="1.5dp"
+            app:textSize="12sp"
+            app:unCheckedColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

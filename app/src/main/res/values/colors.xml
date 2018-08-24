@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#666666</color>
+    <color name="dark_gray">#333333</color>
+    <color name="light_gray">#999999</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_gray">#EEEEEE</color>
+    <color name="white_gray_70">#AAEEEEEE</color>
+    <color name="divide_color">#EDEDED</color>
+    <color name="gray_bg">#EDEDED</color>
+    <color name="swipe_red">#FF3B30</color>
+    <color name="swipe_red_pressed">#FF6B30</color>
+
+    <color name="theme_color">#FF6A26</color>
+    <color name="holo_theme_light">#66FF6A26</color>
+    <color name="holo_theme_dark">#FFFF6A26</color>
+    <color name="vote_result_bg">#FF621D</color>
+    <!--actionsheet-->
+    <color name="actionsheet_pressed">#DDDEDF</color>
+    <color name="actionsheet_top_seperated">#E7E7E7</color>
+    <color name="actionsheet_middle_seperated">#F4F4F4</color>
+    <color name="actionsheet_bottom_seperated">#E6E6E6</color>
+    <!--actionsheet-->
+</resources>

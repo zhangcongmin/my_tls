@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/ll_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/gray_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_round_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:textColor="@color/theme_color"
+                    android:textSize="15sp" />
+
+                <cn.talianshe.android.widget.CustomStarBar
+                    android:id="@+id/starBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    app:starCount="5"
+                    app:starDistance="21dp"
+                    app:starEditable="true"
+                    app:starEmpty="@mipmap/score_star_progress_bg"
+                    app:starFill="@mipmap/score_star_progress"
+                    app:starInteger="true"
+                    app:starMark="0"
+                    app:starSize="26dp" />
+
+                <EditText
+                    android:id="@+id/et_score_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/edit_dialog_gray_bg"
+                    android:gravity="top"
+                    android:hint="@string/input_score_tip"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="18.5dp"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/btn_theme_bg"
+                android:gravity="center"
+                android:text="@string/commit"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

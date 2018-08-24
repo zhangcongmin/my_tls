@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="outlooks">
+        <item>@string/mass</item>
+        <item>@string/youth_member</item>
+        <item>@string/party_member</item>
+    </string-array>
+    <string-array name="score_values">
+        <item>很尴尬</item>
+        <item>一般</item>
+        <item>还可以</item>
+        <item>顶好</item>
+        <item>非常棒</item>
+    </string-array>
+    
+    <integer-array name="association_unjion_icons">
+        <item>@mipmap/dialog_share</item>
+    </integer-array>
+    <string-array name="association_unjion_strs">
+        <item>@string/association_share</item>
+    </string-array>
+
+    <integer-array name="association_jion_icons">
+        <item>@mipmap/dialog_share</item>
+        <item>@mipmap/dialog_exit</item>
+    </integer-array>
+    <string-array name="association_jion_strs">
+        <item>@string/association_share</item>
+        <item>@string/association_exit</item>
+    </string-array>
+
+    <integer-array name="activity_share_icons">
+        <item>@mipmap/dialog_share</item>
+    </integer-array>
+    <string-array name="activity_share_strs">
+        <item>@string/activity_share</item>
+    </string-array>
+
+    <integer-array name="activity_jion_unsign_icons">
+        <item>@mipmap/dialog_share</item>
+        <item>@mipmap/dialog_close_activity</item>
+    </integer-array>
+    <string-array name="activity_jion_unsign_strs">
+        <item>@string/activity_share</item>
+        <item>@string/activity_exit</item>
+    </string-array>
+
+    <integer-array name="activity_jion_start_unsign_icons">
+        <item>@mipmap/dialog_share</item>
+        <item>@mipmap/dialog_exit</item>
+    </integer-array>
+    <string-array name="activity_jion_start_unsign_strs">
+        <item>@string/activity_share</item>
+        <item>@string/activity_sign</item>
+    </string-array>
+
+    <integer-array name="activity_jion_sign_icons">
+        <item>@mipmap/dialog_share</item>
+        <item>@mipmap/dialog_exit</item>
+    </integer-array>
+    <string-array name="activity_jion_sign_strs">
+        <item>@string/activity_share</item>
+        <item>@string/activity_sign_exit</item>
+    </string-array>
+
+
+    <integer-array name="activity_manager_icons">
+        <item>@mipmap/dialog_share</item>
+        <item>@mipmap/dialog_publish_moment</item>
+        <item>@mipmap/dialog_sign_manage</item>
+        <item>@mipmap/dialog_exit</item>
+        <item>@mipmap/dialog_close_activity</item>
+    </integer-array>
+    <string-array name="activity_manager_strs">
+        <item>@string/activity_share</item>
+        <item>@string/activity_publish_moment</item>
+        <item>@string/activity_sign_manage</item>
+        <item>@string/activity_sign_exit</item>
+        <item>@string/activity_exit</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.talianshe.android.widget.MyStickyNavHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sticky_nav_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sticky_nav_host_height"
+    android:visibility="gone"
+    app:layout_id="@layout/view_sticky_tab_item"></cn.talianshe.android.widget.MyStickyNavHost>

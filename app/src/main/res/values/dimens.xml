@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tool_bar_height">48dp</dimen>
+    <dimen name="actionsheet_seperated_height">10dp</dimen>
+    <dimen name="post_moment_img_delete">48dp</dimen>
+
+</resources>

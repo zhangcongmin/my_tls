@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_top_view"
+    android:layout_width="match_parent"
+    android:layout_height="45.1dp"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_association_info"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                app:checkedColor="@color/theme_color"
+                app:isChecked="true"
+                app:lineHeight="1.5dp"
+                app:text="@string/base_info"
+                app:textSize="15sp"
+                app:unCheckedColor="@color/black" />
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_association_activity"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                app:checkedColor="@color/theme_color"
+                app:lineHeight="1.5dp"
+                app:text="@string/activity"
+                app:textSize="15sp"
+                app:unCheckedColor="@color/black" />
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_association_photos"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                app:checkedColor="@color/theme_color"
+                app:lineHeight="1.5dp"
+                app:text="@string/photos"
+                app:textSize="15sp"
+                app:unCheckedColor="@color/black" />
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_association_members"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                app:checkedColor="@color/theme_color"
+                app:lineHeight="1.5dp"
+                app:text="@string/member"
+                app:textSize="15sp"
+                app:unCheckedColor="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divide_color" />
+    </LinearLayout>
+</LinearLayout>

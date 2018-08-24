@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">moment_test</string>
+    <string name="save">保存</string>
+    <string name="no_sd">外部存储失效，无法存储</string>
+    <string name="store_failed">保存失败</string>
+    <string name="store_success">保存成功</string>
+</resources>

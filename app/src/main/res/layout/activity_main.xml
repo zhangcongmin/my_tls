@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.talianshe.android.activity.MainActivity">
+
+
+   <cn.talianshe.android.widget.ScrollViewPager
+       android:id="@+id/view_pager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/tab_bg"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/home"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="9sp"
+            android:drawableTop="@drawable/tab_home"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_moment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/moment"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="9sp"
+            android:drawableTop="@drawable/tab_moment"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_plus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/plus"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_contacts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/contacts"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="9sp"
+            android:drawableTop="@drawable/tab_contacts"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/mine"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="9sp"
+            android:drawableTop="@drawable/tab_mine"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

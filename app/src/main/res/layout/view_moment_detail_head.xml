@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_gray_bg_selector"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/all_association" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forward"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <cn.talianshe.android.widget.ExpandableTextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:maxCollapsedLines="2">
+
+                    <TextView
+                        android:id="@+id/expandable_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/expandable_text"
+                        android:paddingBottom="4dp"
+                        android:text="展开"
+                        android:textColor="@color/theme_color"
+                        android:textSize="13sp" />
+                </cn.talianshe.android.widget.ExpandableTextView>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:visibility="visible">
+
+                    <TableRow android:id="@+id/row1">
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                    </TableRow>
+
+                    <TableRow android:id="@+id/row2">
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v5"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v6"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                    </TableRow>
+
+                    <TableRow android:id="@+id/row3">
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v7"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1" />
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v8"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1"
+
+                            />
+
+                        <cn.talianshe.android.widget.ScaleImageView
+                            android:id="@+id/v9"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_img_thumbnail"
+                            app:scale="1" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2017/11/12 10:35:55"
+                    android:textColor="@color/light_gray"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingEnd="50dp"
+            android:visibility="gone"
+            android:paddingStart="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_share_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                app:boldColor="@color/black"
+                app:checkedColor="@color/theme_color"
+                app:drawableLeft="@mipmap/share"
+                app:lineHeight="1.5dp"
+                app:textSize="12sp"
+                app:unCheckedColor="@color/gray" />
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_comment_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                app:boldColor="@color/black"
+                app:checkedColor="@color/theme_color"
+                app:drawableLeft="@mipmap/comment"
+                app:lineHeight="1.5dp"
+                app:textSize="12sp"
+                app:unCheckedColor="@color/black" />
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_up_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                app:boldColor="@color/black"
+                app:checkedColor="@color/theme_color"
+                app:drawableLeft="@mipmap/no_up"
+                app:lineHeight="1.5dp"
+                app:textSize="12sp"
+                app:unCheckedColor="@color/black" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:text="@string/no_data_tip"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

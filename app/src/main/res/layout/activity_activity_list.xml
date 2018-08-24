@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="62dp"
+            android:layout_marginStart="62dp"
+            android:orientation="horizontal">
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_activity_follow"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="39dp"
+                android:layout_weight="1"
+                app:checkedColor="@color/theme_color"
+                app:isChecked="true"
+                app:lineHeight="1.5dp"
+                app:text="@string/activity_follow"
+                app:textSize="15sp"
+                app:unCheckedColor="@color/gray" />
+
+            <cn.talianshe.android.widget.UnderlineBtn
+                android:id="@+id/btn_activity_jion"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="39dp"
+                android:layout_weight="1"
+                app:checkedColor="@color/theme_color"
+                app:isChecked="false"
+                app:lineHeight="1.5dp"
+                app:text="@string/activity_jion"
+                app:unCheckedColor="@color/gray" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divide_color" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ll_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <cn.talianshe.android.widget.MyXRefreshView
+                android:id="@+id/x_all_refresh_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_all_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </cn.talianshe.android.widget.MyXRefreshView>
+
+            <cn.talianshe.android.widget.MyXRefreshView
+                android:id="@+id/x_follow_refresh_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_follow_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </cn.talianshe.android.widget.MyXRefreshView>
+
+            <cn.talianshe.android.widget.MyXRefreshView
+                android:id="@+id/x_jion_refresh_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_jion_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </cn.talianshe.android.widget.MyXRefreshView>
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_data_tip"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

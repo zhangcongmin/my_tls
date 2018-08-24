@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <cn.talianshe.android.widget.UnderlineBtn
+        android:id="@+id/btn_tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1"
+        app:checkedColor="@color/theme_color"
+        app:lineHeight="1.5dp"
+        app:text="@string/activity"
+        app:textSize="15sp"
+        app:unCheckedColor="@color/black" />
+</LinearLayout>

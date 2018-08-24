@@ -1,0 +1,1 @@
+include ':app', ':photobrowser', ':photopicker', ':sticky_navigation_bar', ':timepicker', ':wechat_test', ':zxinglite', ':tlsbaselibrary'
